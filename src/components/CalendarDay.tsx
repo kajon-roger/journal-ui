@@ -4,7 +4,7 @@ import { AppointmentModel } from "../models/appointment.model";
 import Moment from "moment";
 import { LogbookAPIPromise } from "../modules/LogbookAPIPromise";
 import { clone } from "../utils/clone";
-import { ComponentType, ID } from "../utils/ID";
+import { ID } from "../utils/ID";
 import { Appointment, AppointmentUserAction, AppointmentUserActions } from "./Appointment";
 
 interface CalendarDayProps {

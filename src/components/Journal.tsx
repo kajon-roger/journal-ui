@@ -10,7 +10,7 @@ import { TopicsExplorer } from "./TopicsExplorer"
 import { LoggedInCallback, Login } from "./Login"
 import { LogbookAPIPromise } from "../modules/LogbookAPIPromise"
 import { CalendarMonth } from "./CalendarMonth"
-import { IViewSwitcher, View } from "../modules/IViewSwitcher"
+import { View } from "../modules/IViewSwitcher"
 
 interface Props {
 
@@ -22,11 +22,6 @@ export function Journal(props: Props) {
 
     let [view, setView] = useState(props.initialView);
     let [isLoggedIn, setIsLoggedIn] = useState(props.isLoggedIn ? props.isLoggedIn : false);
-
-    let switchView: IViewSwitcher = (view: View): void => {
-
-        setView(view);
-    }
 
     const menuStyle: CSSProperties = {
         height: "10%",

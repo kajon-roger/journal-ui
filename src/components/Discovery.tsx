@@ -152,16 +152,6 @@ function getTopicModels(): TopicModel[] {
     return topicModels;
 }
 
-function getAppointmentModel(): AppointmentModel {
-
-    return new AppointmentModel("The appointment description", 1, new Date(2024, 0, 20, 10, 25, 45), new Date(2024, 1, 22, 17, 30, 45));
-}
-
-function getAppointmentDay(): DayModel {
-
-    return new DayModel(new Date(2024, 0, 20));
-}
-
 function getDayModel(year: number, month: number, dayOfMonth: number): DayModel {
 
     let entry1 = new EntryModel("Logbook Entry One", 1, "Logbook text one", undefined, true);

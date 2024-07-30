@@ -123,7 +123,9 @@ export function Topic(props: TopicProps) {
                         { topicModel.title }
                         <button onClick={e => copyHyperlinkToClipboard() }>Copy Hyperlink to Clipboard</button>
                     </h1>
-                    { TextUtils.textToLines(topicModel.text, ComponentType.TOPIC, topicModel.id) }
+                    <div data-testid="topic-read-view-text">
+                        { TextUtils.textToLines(topicModel.text, ComponentType.TOPIC, topicModel.id) }
+                    </div>
                 </div>
                 {
                     topicModel.sub_topics && expanded

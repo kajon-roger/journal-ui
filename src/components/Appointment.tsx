@@ -1,6 +1,5 @@
 import { AppointmentModel } from "../models/appointment.model";
 import Moment from "moment";
-import { clone } from "../utils/clone";
 import { ComponentType, ID } from "../utils/ID";
 import { DayModel } from "../models/day.model";
 import { CSSProperties } from "react";
